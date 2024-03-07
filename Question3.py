@@ -1,3 +1,4 @@
+"""Value Error"""
 def validate_range(min_val, max_val):
     """range check"""
     def decorator(func):
@@ -17,4 +18,3 @@ try:
     print(result)
 except ValueError as e:
     print(e)
- 

@@ -1,4 +1,4 @@
-"""import faker"""
+"""import faker TO create the random data"""
 import json
 import random
 from faker import Faker
@@ -20,7 +20,6 @@ for _ in range(random.randint(10, 20)):
         "Salary": salary
     })
 # Write data to JSON file
-with open("employee_personal_details.json", "w",encoding="utf-8") as json_file:
+with open("Employee_Personal_Details.json", "w",encoding="utf-8") as json_file:
     json.dump(employee_details, json_file, indent=4)
-print("Employee personal details generated and saved in 'employee_personal_details.json'")
- 
+print("Employee personal details generated and saved in 'Employee_Personal_Details.json'")

@@ -42,9 +42,6 @@ def terminate_employee(employee_id):
                     terminated_file.write("\n")
                 return
     raise ValueError("Employee not found")
-# Example of terminating an employee
-# terminate_employee("employee_id_here")
-# Fixing salary hike and updating salary figures
 salary_hike_percentages = {
     "Business Unit 1": 10,
     "Business Unit 2": 15,
@@ -58,4 +55,3 @@ for unit, hike_percentage in salary_hike_percentages.items():
 # Writing updated employee details to JSON file
 with open("updated_employee_details.json", "w",encoding="utf-8") as json_file:
     json.dump(employee_details_by_unit, json_file, indent=4)
- 
